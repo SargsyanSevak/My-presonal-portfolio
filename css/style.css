@@ -268,15 +268,16 @@ ul {
   border-radius:50%
 }
 .aside .nav-toggler {
-  height: 40px;
+  padding: 26px 0px 0px 20px;
+  width: 100%;
+  background:var(--bg-black-900);
+  height: 60px;
   cursor: pointer;
   position: fixed;
-  left: 300px;
-  top: 20px;
-  border-radius: 5px;
+  left: 0px;
+  top: 0px;
   display: none;
-  align-items:center;
-  justify-content: center;
+  justify-content: flex-start;
   transition: all 0.3s ease;
 }
 
@@ -866,7 +867,7 @@ h3.my-profession {
   }
   .aside .nav-toggler {
     display: flex;
-    left: 30px;
+    left: 0px;
   }
   .aside .nav-toggler.open {
     left: 210px;

@@ -83,3 +83,7 @@ let loader = setTimeout(function(){
    preloader.style.display = 'none'
    clearTimeout(loader)
 },3500)
+
+
+
+ 
