@@ -861,9 +861,12 @@ h3.my-profession {
 .contact .contact-form .form-item .form-control:focus{
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15)
 }
-.contact .contact-form .form-item textarea.form-control {
-  height: 140px;
+.contact .contact-form .form-item #message.form-control {
+ padding-bottom: 100px;
+ padding-top: 40px;
+ font-size: 16px;
 }
+
 #file {
   outline: 0;
   border:0;
