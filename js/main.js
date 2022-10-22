@@ -77,44 +77,12 @@ function asideSectionTogglerBtn() {
  
 //=====================  PreLoader  ===================
 
-// const preloader = document.querySelector('#preloader');
-// let loader = setTimeout(function(){
-//    preloader.style.display = 'none'
-//    clearTimeout(loader)
-// },3500)
+const preloader = document.querySelector('#preloader');
+let loader = setTimeout(function(){
+   preloader.style.display = 'none'
+   clearTimeout(loader)
+},3500)
 
 
-//==================  Contact Form =====================
 
-// const contactForm = document.querySelector('.contact-form')
-// const sendEmailBtn = document.querySelector('.sendEmailBtn')
-// const firstName = document.querySelector('#fName')
-// const email= document.querySelector('#email')
-// const subject = document.querySelector('#subject')
-// const message = document.querySelector(' #message')
 
-// contactForm.addEventListener('submit',(e)=>{
-//   e.preventDefault()
-//   let formData = {
-//     firstName:firstName.value,
-//     email:email.value,
-//     subject:subject.value,
-//     message:message.value
-//   }
-//   let xhr = new XMLHttpRequest();
-//   xhr.open('POST','/');
-//   xhr.setRequestHeader('content-type','application/json');
-//   xhr.onload = function(){
-//     console.log(xhr.responseText);
-//     if(xhr.responseText == 'success'){
-//       alert('email sent')
-//        firstName.value ='';
-//        email.value ='';
-//        subject.value = '';
-//        message.value = '';
-//     }else {
-//       alert('something went wrong')
-//     }
-//   }
-//  xhr.send(JSON.stringify(formData))
-// })
