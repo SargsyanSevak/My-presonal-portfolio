@@ -864,6 +864,14 @@ h3.my-profession {
 .contact .contact-form .form-item textarea.form-control {
   height: 140px;
 }
+#file {
+  outline: 0;
+  border:0;
+  padding-bottom:35px;
+  padding-left: 15px;
+}
+
+
 .contact .contact-form .btn {
   height: 50px;
   padding: 0 50px;
