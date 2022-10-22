@@ -86,6 +86,7 @@ let loader = setTimeout(function(){
 
 const contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit',(e)=>{
+  e.target.onSubmit = 'submit'
   e.preventDefault()
   alert('sent')
 })
