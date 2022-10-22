@@ -4,11 +4,11 @@ const app = express();
 const nodemailer = require('nodemailer')
 
 const PORT = process.env.PORT || 5000;
-app.use(express.static('public'))
+app.use(express.static('./'))
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-  res.sendFile(__dirname + 'public/index.html')
+  res.sendFile(__dirname + './index.html')
 })
 
 app.post('/',(req,res)=>{
