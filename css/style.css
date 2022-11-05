@@ -766,9 +766,11 @@ h3.my-profession {
   color:var(--text-black-900);
   z-index: 1;
   transition: top .5s ease;
+  visibility: hidden;
 }
 .portfolio .portfolio-item-inner .portfolio-img:hover .item-title {
   top: 60px;
+  visibility: visible;
 }
 .button {
   position: relative;
