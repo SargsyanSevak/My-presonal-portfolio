@@ -491,6 +491,7 @@ h3.my-profession {
   font-size: 18px;
   color:var(--text-black-700);
   text-transform: capitalize;
+
 }
 .about .about-content .personal-info .info-item .progress{
   background: var(--bg-black-50);
@@ -531,10 +532,27 @@ h3.my-profession {
 
 .about .about-content .skills {
   flex: 0 0 60%;
-  max-width: 600%;
+  max-width: 60%;
   margin-top: 40px;
 }
-.about .about-content .skills .skill-item {
+.about .about-content .skills .skill-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items:center;
+  min-height: 300px;
+}
+.about .about-content .skills .skill-row .skill-icon {
+  flex: 0 0 25% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content .skills .skill-row .skill-icon img{
+  width: 70px;
+  max-width: 100%;
+}
+/* .about .about-content .skills .skill-item {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 25px;
@@ -569,7 +587,7 @@ h3.my-profession {
   top: -40px;
   font-weight: 400;
   line-height: 40px;
-}
+} */
 .about .about-content .education,
 .about .about-content .experience{
   flex: 0 0 100%;
@@ -947,5 +965,12 @@ h3.my-profession {
   } 
   .section.open{
     left: 0px;
+  }
+  .about .about-content .skills .skill-row {
+    min-height: 200px;
+  }
+  .about .about-content .skills .skill-row .skill-icon img {
+    width: 50px;
+    max-width: 100%;
   }
 }
